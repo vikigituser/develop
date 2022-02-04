@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="ci-cd-doctusFlow" doc:id="e0aab717-42f6-4265-aede-0a16c7486875" >
 		<http:listener doc:name="Listener" doc:id="a22b6721-aa5e-4431-8003-cbbd88378ae8" config-ref="HTTP_Listener_config" path="/test"/>
 		<set-payload value="payload" doc:name="Set Payload" doc:id="e0b29499-e1d0-496c-902a-8666f96aed2b" />
+		<logger level="INFO" doc:name="Logger" doc:id="fdb90957-e8ee-4419-ae61-45d3912f2146" message="end of the flow"/>
 	</flow>
 </mule>
